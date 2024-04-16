@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#main{
+    width: 60%;
+    background-color:rgb(193, 125, 23);
+    padding: 10px;
+    border-radius: 10px;  
+}
+.header{
+   text-align: center;
+    display: block;
+    
+    background-color:black;
+    color:pink;
+    border-radius: 20px;    
+}
+.log{
+    width: 80px;
+    color: rgb(220, 201, 201);
+    padding: 5px 10px;
+    background-color: rgb(57, 71, 38);
+    border-radius: 30px;
+}
+span >img{
+    width: 40px;
+    height: 40px;
+    margin:0 5px;
+}
+.room{
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: rgb(44, 160, 121);
+    border-radius: 30px;
+}
+.user{
+    justify-content: right;
+    margin-left: auto;
+}
+.message-body{
+   padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+   padding: 15px;
+   overflow-y: auto;
+   position: relative;
+   background-image: url(bg.png);
+   margin-top: 5px;
+   border-radius: 10px;  
+   
+}
+.message {
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 30px;
+    max-width: 300px;
+    position: relative;
+    background-color: white;
+}
+.outgoing {
+    margin-left: auto;
+}
+
+.incoming{
+    margin-right: auto;
+}
+.message h4 {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    color:rgb(251, 247, 247);
+    font-size: 14px;
+}
+.message-form{
+    padding: 10px;
+    display: flex;
+ background-color: rgb(117, 158, 117);
+    border-radius: 10px;
+    justify-content: center;
+}
+input{
+    width:100%;
+    border: none;
+    outline: none;
+    height: 40px;
+}
+#imageInput{
+display: none;
+}
+.clip, .btn{
+    width:40;
+    height: 40px;
+    background-color:white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.btn{
+    margin-left: auto;
+    border-top-right-radius: 5px;
+}
+.uploadedImage{
+    width: 100px;
+    height:100px;
+}
+#chat{
+text-align: center;
+padding: 0%;
+margin-top: 0px ;
+color:chocolate;
+font-style: italic;
+}
+
+
+

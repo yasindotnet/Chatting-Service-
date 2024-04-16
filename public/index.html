@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Bootstrap v3.4.1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Chat GPT</title>
+</head>
+<body>
+    <section id="main">  
+        <div class="header">                 
+           <div class="user"></div>
+        </div>
+        <div class="message-body">    
+        </div>
+        <div class="message-form">     
+            <input type="text" name="txt-msg" id="txtMsg" value="" placeholder="Enter your message"> 
+            <label for="imageInput"><img src="clip.png" name="file-msg" class="clip"  />  </label>
+            <button type="button" class="" data-toggle="modal" data-target="#myModal" style="height: 41px;">Form</button>
+            <input type="file" name="fileShare" id="imageInput">
+            <image src="send.png" class="btn" onclick="sendClick()"/>
+        </div>
+    </section>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">   
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Form Data</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            <label>Employee ID:</label><input type="number" id="id" class="form-control"  required/>
+          </p>
+          <p>
+            <label>Employee salary:</label><input type="numcer" id="salary" class="form-control" required/>
+          </p>
+        
+        </div>
+        <div class="modal-footer">
+            <button type="button"  data-dismiss="modal" onclick="sendFormData()">Submit</button>
+            <button type="button"  data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
